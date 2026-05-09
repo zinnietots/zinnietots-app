@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zinnietots Online Classes Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2b4eff;
+    }
+
+    p.description {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #2b4eff;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .checkbox-group,
+    .radio-group {
+      margin-top: 10px;
+    }
+
+    .checkbox-group label,
+    .radio-group label {
+      font-weight: normal;
+      display: block;
+      margin-top: 8px;
+    }
+
+    button {
+      background: #2b4eff;
+      color: white;
+      border: none;
+      padding: 14px 20px;
+      margin-top: 30px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d38c4;
+    }
+
+    .success-message {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background: #e7f8ec;
+      color: #1a7f37;
+      border-radius: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Zinnietots Online Classes Registration</h1>
+    <p class="description">
+      Welcome to Zinnietots Online Classes! Please complete this form to register your child for our online lessons in Mathematics, English, Science, and Handwriting for children ages 5-8 years.
+    </p>
+
+    <form id="registrationForm">
+      <h2>Parent/Guardian Information</h2>
+
+      <label>Parent/Guardian Full Name</label>
+      <input type="text" required />
+
+      <label>Relationship to Child</label>
+      <input type="text" required />
+
+      <label>Phone Number</label>
+      <input type="tel" required />
+
+      <label>WhatsApp Number</label>
+      <input type="tel" required />
+
+      <label>Email Address</label>
+      <input type="email" required />
+
+      <label>Home Address</label>
+      <textarea rows="3"></textarea>
+
+      <h2>Child Information</h2>
+
+      <label>Child's Full Name</label>
+      <input type="text" required />
+
+      <label>Child's Age</label>
+      <select required>
+        <option value="">Select Age</option>
+        <option>5 years</option>
+        <option>6 years</option>
+        <option>7 years</option>
+        <option>8 years</option>
+      </select>
+
+      <label>Gender</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" /> Male</label>
+        <label><input type="radio" name="gender" /> Female</label>
+        <label><input type="radio" name="gender" /> Prefer not to say</label>
+      </div>
+
+      <label>Current School/Class</label>
+      <input type="text" />
+
+      <label>Does your child have any learning difficulties or special support needs?</label>
+      <textarea rows="4"></textarea>
+
+      <h2>Class Registration Details</h2>
+
+      <label>Which subjects would you like to register your child for?</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Mathematics</label>
+        <label><input type="checkbox" /> English</label>
+        <label><input type="checkbox" /> Science</label>
+        <label><input type="checkbox" /> Handwriting</label>
+      </div>
+
+      <label>Preferred Learning Schedule</label>
+      <div class="radio-group">
+        <label><input type="radio" name="schedule" /> Weekdays</label>
+        <label><input type="radio" name="schedule" /> Weekends</label>
+        <label><input type="radio" name="schedule" /> Evening Classes</label>
+      </div>
+
+      <label>Preferred Class Time</label>
+      <select>
+        <option>Morning</option>
+        <option>Afternoon</option>
+        <option>Evening</option>
+      </select>
+
+      <label>Does your child have access to a device for online learning?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="deviceaccess" /> Yes</label>
+        <label><input type="radio" name="deviceaccess" /> No</label>
+      </div>
+
+      <label>What device will your child use for classes?</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Smartphone</label>
+        <label><input type="checkbox" /> Tablet</label>
+        <label><input type="checkbox" /> Laptop</label>
+        <label><input type="checkbox" /> Desktop Computer</label>
+      </div>
+
+      <h2>Payment Information</h2>
+
+      <label>Preferred Payment Method</label>
+      <div class="radio-group">
+        <label><input type="radio" name="payment" /> Bank Transfer</label>
+        <label><input type="radio" name="payment" /> Mobile Transfer</label>
+      </div>
+
+      <label>Upload Proof of Payment (Optional)</label>
+      <input type="file" />
+
+      <h2>Additional Information</h2>
+
+      <label>How did you hear about Zinnietots?</label>
+      <select>
+        <option>WhatsApp</option>
+        <option>Facebook</option>
+        <option>Instagram</option>
+        <option>Referral</option>
+        <option>Flyer</option>
+        <option>Other</option>
+      </select>
+
+      <h2>Agreement</h2>
+
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" required />
+          I confirm that the information provided in this form is accurate and complete.
+        </label>
+
+        <label>
+          <input type="checkbox" required />
+          I agree to abide by the Zinnietots Online Classes Terms of Service and understand that respectful behavior, attendance, and timely payments are expected.
+        </label>
+      </div>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+
+    <div class="success-message" id="successMessage">
+      Registration submitted successfully! We will contact you shortly.
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('registrationForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      successMessage.style.display = 'block';
+      form.reset();
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
